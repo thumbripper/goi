@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <!-- Header / tap to open full app -->
+    <Button
+        android:id="@+id/widget_add_entry_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="+ Add entry…"
+        android:textSize="14sp"
+        android:gravity="center_vertical|start"
+        android:paddingStart="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Preset food buttons — 4x2 grid via nested LinearLayouts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/widget_btn_water"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="💧 Water"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_coffee"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="☕ Coffee"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_tea"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🍵 Tea"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_alcohol"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🍺 Alcohol"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <Button
+            android:id="@+id/widget_btn_granola"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🌾 Granola"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_bread"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🍞 Bread"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_fruit"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🍎 Fruit"
+            android:textSize="11sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_dairy"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="🥛 Dairy"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Feeling buttons -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feeling:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/widget_btn_feeling_1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="😊"
+            android:textSize="20sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_feeling_2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="😐"
+            android:textSize="20sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_feeling_3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="🤢"
+            android:textSize="20sp"
+            android:layout_marginEnd="2dp" />
+
+        <Button
+            android:id="@+id/widget_btn_feeling_4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="🤮"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
